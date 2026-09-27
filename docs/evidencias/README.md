@@ -4,7 +4,7 @@ Registros das três iterações e detalhes de três exemplos da iteração final
 
 [Voltar ao README do projeto](../../README.md) · [Dataset público e experimentos](https://smith.langchain.com/public/a8b0113b-56e7-4d9d-9849-0156f68fb3ac/d)
 
-Os arquivos de imagem foram preservados sem edição. As linhas 4, 5 e 7 correspondem à ordenação da tabela capturada, não a identificadores permanentes. As capturas mostram entrada, resposta e feedback; não mostram a árvore completa de chamadas do trace.
+Os arquivos de imagem foram preservados sem edição. As linhas 4, 5 e 7 correspondem à ordenação da tabela capturada, não a identificadores permanentes. As capturas mostram entrada, resposta e feedback, além da árvore de chamadas de geração dos três exemplos: `Target`, `RunnableSequence`, `ChatPromptTemplate` e `ChatOpenAI`. As visões de trace identificam o modelo, a duração e as cinco notas; não representam o pensamento interno do modelo.
 
 ## Visão geral
 
@@ -19,6 +19,8 @@ Os arquivos de imagem foram preservados sem edição. As linhas 4, 5 e 7 corresp
 - [Iteração 3 selecionada](avaliacao-iteration-03.txt)
 
 ## Linha 4 — Relatório de vendas
+
+![Árvore de chamadas e feedbacks — linha 4](l4-trace.png)
 
 Helpfulness: 0,875; Correctness: 0,835; F1: 0,80; Clarity: 0,88; Precision: 0,87.
 
@@ -55,6 +57,8 @@ Helpfulness: 0,875; Correctness: 0,835; F1: 0,80; Clarity: 0,88; Precision: 0,87
 
 ## Linha 5 — Adicionar ao carrinho
 
+![Árvore de chamadas e feedbacks — linha 5](l5-trace.png)
+
 Helpfulness: 0,875; Correctness: 0,9237; F1: 0,9474; Clarity: 0,85; Precision: 0,90.
 
 <details>
@@ -88,6 +92,8 @@ Helpfulness: 0,875; Correctness: 0,9237; F1: 0,9474; Clarity: 0,85; Precision: 0
 </details>
 
 ## Linha 7 — Sincronização offline
+
+![Árvore de chamadas e feedbacks — linha 7](l7-trace.png)
 
 Helpfulness: 0,925; Correctness: 0,9244; F1: 0,9189; Clarity: 0,92; Precision: 0,93.
 

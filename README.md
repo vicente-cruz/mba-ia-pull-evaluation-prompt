@@ -157,7 +157,7 @@ As capturas registram entradas, saídas e feedbacks de três exemplos da terceir
 | Adicionar ao carrinho — linha 5 | 0,875 | 0,9237 | 0,9474 | 0,85 | 0,90 |
 | Sincronização offline — linha 7 | 0,925 | 0,9244 | 0,9189 | 0,92 | 0,93 |
 
-**[Ver capturas organizadas por exemplo](docs/evidencias/README.md).** As imagens mostram o conteúdo e os feedbacks das execuções; não incluem uma visão completa da árvore de chamadas. O tracing registra mensagens, respostas e chamadas, não o pensamento interno do modelo.
+**[Ver capturas organizadas por exemplo](docs/evidencias/README.md).** As evidências incluem a árvore de chamadas dos três exemplos, com `Target`, `RunnableSequence`, `ChatPromptTemplate` e `ChatOpenAI`, o modelo `gpt-4.1-mini-2025-04-14`, duração e as cinco notas. As capturas complementares detalham entradas, saídas e justificativas dos avaliadores. O tracing registra mensagens, respostas e chamadas, não o pensamento interno do modelo.
 
 ### Limitações observadas
 
