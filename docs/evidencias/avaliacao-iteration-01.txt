@@ -1,0 +1,84 @@
+==================================================
+AVALIAÇÃO DE PROMPTS OTIMIZADOS
+==================================================
+
+Provider: openai
+Modelo Principal: gpt-4.1-mini-2025-04-14
+Modelo de Avaliação: gpt-4.1-2025-04-14
+
+Criando dataset de avaliação: mba-ia-pull-evaluation-prompt-eval...
+   ✓ Carregados 15 exemplos do arquivo datasets/bug_to_user_story.jsonl
+   ✓ Dataset criado com 15 exemplos
+   ✓ https://smith.langchain.com/o/346b3f12-c922-4a0e-be23-db374b3ca87e/datasets/17ed5ee1-9096-48ca-9272-f060efd117a4
+
+======================================================================
+PROMPTS PARA AVALIAR
+======================================================================
+
+Este script irá puxar prompts do LangSmith Hub.
+Certifique-se de ter feito push dos prompts antes de avaliar:
+  python src/push_prompts.py
+
+
+🔍 Avaliando: vicente-cruz/bug_to_user_story_v2
+   Puxando prompt do LangSmith Hub: vicente-cruz/bug_to_user_story_v2
+   ✓ Prompt carregado com sucesso
+   Rodando experimento no LangSmith...
+View the evaluation results for experiment: 'vicente-cruz-bug_to_user_story_v2-39448e02' at:
+https://smith.langchain.com/o/346b3f12-c922-4a0e-be23-db374b3ca87e/datasets/17ed5ee1-9096-48ca-9272-f060efd117a4/compare?selectedSessions=3700c0eb-8462-477e-931c-2c3a2ec5c677
+
+
+15it [01:28,  5.88s/it]
+      [1] F1:0.90 Clarity:0.92 Precision:0.97
+      [2] F1:0.90 Clarity:0.85 Precision:0.97
+      [3] F1:0.90 Clarity:0.85 Precision:0.97
+      [4] F1:0.82 Clarity:0.90 Precision:0.87
+      [5] F1:0.95 Clarity:0.93 Precision:0.97
+      [6] F1:0.90 Clarity:0.85 Precision:0.97
+      [7] F1:0.95 Clarity:0.85 Precision:1.00
+      [8] F1:0.95 Clarity:0.95 Precision:0.97
+      [9] F1:0.80 Clarity:0.93 Precision:0.93
+      [10] F1:0.82 Clarity:0.85 Precision:0.93
+      [11] F1:0.80 Clarity:0.85 Precision:0.93
+      [12] F1:0.82 Clarity:0.90 Precision:0.93
+      [13] F1:0.95 Clarity:0.85 Precision:0.93
+      [14] F1:0.89 Clarity:0.85 Precision:0.93
+      [15] F1:0.80 Clarity:0.75 Precision:0.70
+
+==================================================
+Prompt: vicente-cruz/bug_to_user_story_v2
+==================================================
+
+Métricas Derivadas:
+  - Helpfulness: 0.90 ✓
+  - Correctness: 0.90 ✓
+
+Métricas Base:
+  - F1-Score: 0.88 ✓
+  - Clarity: 0.87 ✓
+  - Precision: 0.93 ✓
+
+--------------------------------------------------
+📊 MÉDIA GERAL: 0.8969
+--------------------------------------------------
+
+✅ STATUS: APROVADO - Todas as métricas >= 0.8
+
+==================================================
+RESUMO FINAL
+==================================================
+
+Prompts avaliados: 1
+Aprovados: 1
+Reprovados: 0
+
+Resultados no LangSmith (notas gravadas como feedback no experimento):
+  vicente-cruz/bug_to_user_story_v2
+    https://smith.langchain.com/o/346b3f12-c922-4a0e-be23-db374b3ca87e/datasets/17ed5ee1-9096-48ca-9272-f060efd117a4/compare?selectedSessions=3700c0eb-8462-477e-931c-2c3a2ec5c677
+
+✅ Todos os prompts atingiram todas as métricas >= 0.8!
+
+Próximos passos:
+1. Documente o processo no README.md
+2. Capture screenshots das avaliações
+3. Faça commit e push para o GitHub
